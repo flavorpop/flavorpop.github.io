@@ -21,6 +21,11 @@ body, html {
   position: fixed;
 }
 
+.color {
+  background-color: #2f353f;
+}
+
+
 #logo {
   float: left;
   z-index: 5;
