@@ -1,0 +1,286 @@
+body, html {
+  font-family: "Open Sans", "Lobster Two";
+  background: #401C1A;
+  margin: 0 auto;
+}
+
+#topbar {
+  z-index: 10;
+  width: 100%;
+  padding: 10px 0px;
+  /*background: #2f353f;*/
+  position: fixed;
+}
+
+#topbar2 {
+  z-index: 10;
+  width: 100%;
+  padding: 10px 0px;
+  /*background: #2f353f;*/
+  background-color: white;
+  position: fixed;
+}
+
+#logo {
+  float: left;
+  z-index: 5;
+  margin-left: 15px;
+}
+
+#logo img{
+  height: 40px;
+}
+
+.topbar-text {
+  float: right;
+  color: white;
+  padding: 0px 30px;
+  font-size: 12px;
+  /*font-weight: 700;*/
+  line-height: 30px;
+}
+
+.topbar-text:hover {
+  border: 1px dotted white;
+}
+
+.topbar-text2 {
+  float: right;
+  color: black;
+  padding: 0px 30px;
+  font-size: 12px;
+  /*font-weight: 700;*/
+  line-height: 30px;
+}
+
+.topbar-text2:hover {
+  border: 1px dotted black;
+}
+
+#overlay {
+  /*background-color: black;
+  opacity: 0.8;*/
+}
+
+#main {
+  height: 600px;
+  background-image: url('../img/background.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #401C1A;
+  vertical-align: middle;
+}
+
+.main-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+#main-text-big {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+#main-text {
+  font-family: "Lobster Two";
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.button {
+  padding: 10px 15px 10px 15px;
+  margin-top: 50px;
+  position: absolute;
+  left: calc((100% -80px) /2 - 55px);
+  border: 2px solid black;
+  width: 80px;
+  font-weight: 900;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.section {
+	width: 100%;
+	height: 450px;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  width: 50%;
+  left: 25%;
+  margin: auto;
+}
+
+#question {
+  background-color: white;
+}
+
+#question-text-big {
+  font-family: "Lobster Two";
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #401C1A;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#question-text {
+  color: #401C1A;
+  text-align: center;
+  font-size: 14px;
+}
+
+#info {
+  background-color: #401C1A;
+}
+
+.info-text {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  font-family: "Lobster Two";
+}
+
+#bottom {
+  background-color: #7F3834;
+}
+
+#photo-container {
+  text-align: center;
+}
+
+#photo-container img {
+  width: 150px;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/*#end {
+  clear: both;
+	position: absolute;
+	height: 0px;
+	bottom: 0;
+  text-align: center;
+}*/
+
+/* FOR MENU PAGE */
+
+#wrapper {
+  /*margin-top: 100px;
+  margin-bottom: 4%;*/
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.item {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  /*padding: 15px;*/
+  display: inline-block;
+}
+
+.menu-pic {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.menu-text {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility opacity 0.4s;
+  z-index: 1;
+  position: absolute;
+  /*width: 300px;
+  height: 300px;*/
+  /*top: 0;*/
+  bottom: 0;
+  left: 0;
+  /*right: 0;*/
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 100;
+  padding: 5px;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.item p {
+  margin: 0;
+}
+
+.item:hover .menu-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+#order {
+  /*position: absolute;
+  top: 50px;*/
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(255, 255, 255,0.5);
+  padding: 15px 15px 15px 15px;
+  width: 50%;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+label {
+  width: 4em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block;
+  font-weight: 300;
+}
+
+input {
+  line-height: 1.5em;
+  width: 80%;
+}
+
+textarea {
+  line-height: 1.5em;
+  width: 80%;
+  min-height: 150px;
+}
+
+#bkgd {
+  height: 800px;
+  background-image: url('../img/background.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #401C1A;
+  vertical-align: middle;
+  z-index: 15;
+}
